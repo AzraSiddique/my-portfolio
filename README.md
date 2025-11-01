@@ -7,7 +7,7 @@
 
 **A modern, responsive, and blazing-fast personal portfolio website showcasing full-stack development and UX design expertise.**
 
-[View Live Demo](#) • [Report Bug](https://github.com/AzraSiddique/portfolio/issues) • [Request Feature](https://github.com/AzraSiddique/portfolio/issues)
+[View Live Demo](https://azra-portfolio.netlify.app/) • [Report Bug](https://github.com/AzraSiddique/portfolio/issues) • [Request Feature](https://github.com/AzraSiddique/portfolio/issues)
 
 ---
 
