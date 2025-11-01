@@ -1,0 +1,14 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* The local fallback is imported directly from `src/main.jsx` so it is
+  bundled as a separate module and avoids PostCSS @import ordering rules. */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

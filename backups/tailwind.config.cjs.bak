@@ -1,0 +1,17 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './index.html',
+    './src/**/*.{html,js,ts,jsx,tsx}'
+  ],
+  // Broad safelist to ensure color utilities and common classes are available
+  // (temporary — narrows can be used later to reduce output size)
+  safelist: [
+    { pattern: /^(bg|text|from|to|border|placeholder)-/ },
+    { pattern: /^p-|^m-|^px-|^py-/ },
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
