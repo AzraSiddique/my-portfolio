@@ -1,4 +1,4 @@
-// ProjectsSection.js
+// ProjectsSection.jsx
 import React, { useState } from 'react';
 import { Github, ExternalLink, ArrowRight, Star } from 'lucide-react';
 import { featuredProjects, allProjects } from './projectsData';

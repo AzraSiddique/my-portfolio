@@ -1,4 +1,4 @@
-// OtherSections.js - About, Skills, Certifications, Contact
+// OtherSections.jsx - About, Skills, Certifications, Contact
 import React, { useState } from 'react';
 import { Code, Palette, Award, Mail, Phone, Linkedin, Github, ArrowRight, ExternalLink } from 'lucide-react';
 import { skills, certifications } from './projectsData';
