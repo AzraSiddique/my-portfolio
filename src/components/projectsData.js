@@ -114,12 +114,12 @@ export const featuredProjects = [
       {
         title: "Onboarding Screen",
         description: "User-friendly input flow with destination, trip duration, and traveler selection",
-        image: "" // Add URL of your onboarding screen export
+        image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1762306323/Task_1-_Onboarding_y0pmlc.jpg" // Add URL of your onboarding screen export
       },
       {
         title: "Trip Dashboard / Day View",
         description: "Structured daily itinerary with visual activity cards, date navigation, and embedded travel details",
-        image: "" // Add URL of your dashboard screen export
+        image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1762306441/Task_2-_Main_Dashboard_zg5kit.jpg" // Add URL of your dashboard screen export
       }
     ],
     
