@@ -4,7 +4,7 @@ export const featuredProjects = [
   year: "2025",
   description: "Designed a high-fidelity travel itinerary app focusing on user-friendly onboarding and a structured dashboard with visual activity breakdowns, real-time navigation integration, and embedded travel recommendations.",
   tech: ["Figma", "UI/UX Design", "Prototyping"],
-  type: "UI Design",
+  type: "UX Design",
   category: "Mobile App Design",
   color: "from-blue-500 to-indigo-600",
   
@@ -109,7 +109,7 @@ export const featuredProjects = [
       }
     ],
     
-    // Screen images - ADD YOUR URLS HERE after exporting the 2 screens from Figma
+    // Screen images - ADD URLS HERE after exporting the 2 screens from Figma
     screens: [
       {
         title: "Onboarding Screen",
@@ -125,7 +125,6 @@ export const featuredProjects = [
     
     //mockupImage: "", // Alternative: single composite image showing both screens
     
-    // Fallback text if metrics don't render
     impact: "Travello demonstrates strong visual design skills and understanding of mobile UI patterns. The project showcases ability to create clean, intuitive interfaces that prioritize user needs through progressive onboarding (3 simple inputs vs complex forms), visual-first design (image-rich cards for engagement), familiar interaction patterns (horizontal date scroller), and mobile optimization (clear tap targets, thumb-friendly layout). Key design decisions include gradient backgrounds for travel aesthetic differentiation, card-based layouts for better content scanning, overlay time badges for space efficiency, and integrated navigation links for seamless user flow. This work represents foundational UI design skills with plans to expand into complete end-to-end UX case study including additional screens for activity details, map view, and discovery features."
   }
 },
@@ -285,7 +284,6 @@ export const featuredProjects = [
       
       //mockupImage: "", // Alternative: single composite image
       
-      // Fallback text if metrics don't render
       impact: "SubTrack directly addresses documented market needs: 73% want consolidated management, 100% of participants validated renewal notifications as critical, and FTC's 70 daily complaints prove cancellation friction is systemic. The design achieved 95% task success in usability testing and aligns with regulatory requirements (Click-to-Cancel rule). Key insights emphasize research-driven decisions (71.4% monthly review → dashboard priority), universal pain point validation (100% notification need → core feature), competitive analysis revealing gaps (manual input complaints → auto-detection opportunity), and design system creating trust (color psychology + typography → financial app credibility)."
     }
   },
@@ -334,25 +332,153 @@ export const allProjects = {
   ux: [
     ...featuredProjects.filter(p => p.type === "UX Design"),
     {
-      title: "Netclan Explorer Redesign",
-      year: "Jul 2024",
-      description: "Redesigned Profile, Refine, and Connections screens.",
-      tech: ["Figma", "Prototyping"],
-      type: "UX Design",
-      category: "Mobile App Redesign",
-      color: "from-pink-500 to-rose-500",
-      caseStudy: {
-        problem: "Poor visual hierarchy made navigation difficult.",
-        solution: "Redesigned with improved hierarchy and clearer call-to-actions.",
-        process: [
-          "Analyzed existing app",
-          "Gathered user feedback",
-          "Redesigned key screens",
-          "Created interactive prototypes"
-        ],
-        impact: "Improved user engagement through clearer visual hierarchy."
-      }
+    title: "NETCLAN EXPLORER - Hyperlocal Networking Redesign",
+    year: "Jul 2024",
+    description: "Redesigned 3 core screens (Connections, Profile, Refine) for a hyperlocal networking app serving 200K+ users across 300+ cities—enhancing visual hierarchy, scannability, and user engagement through strategic information architecture.",
+    tech: ["Figma", "Prototyping", "Visual Design", "Information Architecture"],
+    type: "UX Design",
+    category: "Mobile App Design",
+    color: "from-blue-600 to-teal-500",
+    
+    //behanceLink: "https://www.behance.net/your-username/netclan", // UPDATE THIS
+    
+    caseStudy: {
+      problem: "Netclan Explorer enables hyperlocal networking—connecting users with individuals, professionals, and businesses within their geographic radius for purposes ranging from professional networking to dating, business promotion, and community building. However, the original interface across key screens suffered from critical UX issues: dense information architecture with competing visual elements created cognitive overload, profile cards lacked clear visual hierarchy making quick scanning difficult, incomplete profile sections discouraged user engagement, and critical filtering controls (purpose tags, distance slider) appeared as secondary elements despite being primary features. These issues hindered the core value proposition: helping users quickly discover and connect with relevant local contacts within 1-100km radius.",
+      
+      stats: [
+        { value: "200K+", label: "Users across 300+ cities in India", color: "text-blue-400" },
+        { value: "3-5 sec", label: "Time users take to evaluate connection cards", color: "text-teal-400" },
+        { value: "3 screens", label: "Core user journey touchpoints redesigned", color: "text-purple-400" }
+      ],
+      
+      solution: "The redesign focuses on three core principles: visual hierarchy, scannability, and engagement. For the Connections screen, I reduced visual clutter by 50% through strategic white space, created distinct content zones (header, tags, bio), and elevated the '+ Invite' CTA with prominent styling for thumb accessibility. The greeting changed from formal 'Howdy Mohammed Azra Ahamed Siddique' to friendly 'Hello! Azra' for personalization. Profile screen introduced tab-based navigation (Personal, Education, Work, Interests) using progressive disclosure to reduce overwhelming single-scroll experience, added completion progress indicators to encourage profile building, and centralized key information (name, age, contact) in a hero section. The Refine screen elevated purpose tags as primary filtering mechanism with increased size and visual weight, redesigned the hyperlocal distance slider (1-100km) with better visual feedback, and transformed the status input into a prominent feature with character count (42/250) guidance—making all controls match their importance in the user journey.",
+      
+      features: [
+        {
+          title: "Scannable Connection Cards",
+          description: "50% clutter reduction + clear content zones for 3-5 sec evaluation",
+          bgColor: "bg-blue-500/20",
+          iconColor: "text-blue-400"
+        },
+        {
+          title: "Progressive Profile Disclosure",
+          description: "Tab navigation + completion indicators boost engagement",
+          bgColor: "bg-teal-500/20",
+          iconColor: "text-teal-400"
+        },
+        {
+          title: "Prominent Filter Controls",
+          description: "Purpose tags + distance slider elevated to primary UI elements",
+          bgColor: "bg-purple-500/20",
+          iconColor: "text-purple-400"
+        },
+        {
+          title: "Consistent Visual Language",
+          description: "Unified spacing, typography, and interaction patterns across all screens",
+          bgColor: "bg-pink-500/20",
+          iconColor: "text-pink-400"
+        }
+      ],
+      
+      process: [
+        "Conducted heuristic evaluation of three key screens (Connections, Profile, Refine) to identify usability issues. Connections screen revealed: dense information architecture with competing elements, unclear profile status indicators, low CTA prominence, and difficulty scanning multiple profiles. Profile screen showed: incomplete sections creating emptiness, poor content structure, lack of navigation clarity. Refine screen exposed: underwhelming filtering controls despite being core feature, distance slider lacking visual feedback, status input appearing as simple text box",
+        
+        "Defined three primary user personas based on app's hyperlocal networking purpose: (1) Local Professional (age 24, UX Designer)—seeks collaboration, struggles to identify relevant connections, wants professional presentation; (2) Student Networker (age 22, Developer)—finds job opportunities, overwhelmed by information, needs quick filtering; (3) Casual User (age 22)—makes local friends, finds interface cluttered, unclear about feature meanings. These personas validated across professional networking, student job-seeking, and community building use cases",
+        
+        "Established four core design goals: (1) Improve visual hierarchy through clear information layering, (2) Enhance scannability enabling quick connection assessment without overload, (3) Increase engagement making profile completion more inviting, (4) Modernize visual design with contemporary patterns while maintaining brand identity. Each goal directly addressed identified pain points from heuristic evaluation and persona needs",
+        
+        "Iterated through four design phases: (1) Initial sketches exploring card layouts, profile tab organizations, filter arrangements; (2) Low-fidelity wireframes testing spacing ratios, typography hierarchy, validating information architecture; (3) High-fidelity mockups applying brand colors (navy blue header), visual styling, creating prototypes; (4) Final refinements adjusting contrast for accessibility, fine-tuning spacing/alignment, ensuring cross-screen consistency",
+        
+        "Made strategic design decisions grounded in UX principles: Maintained navy header + white content areas (brand preservation + readability), established 3-level typography hierarchy (Name > Role/Distance > Bio/Tags) for 3-5 second scanning, reduced card information density while keeping essential data, implemented consistent icon+label tag system (☕ Coffee, 💼 Business, 🎨 Hobbies) for recognition speed, chose tabs over single scroll (reduces complexity, improves completion rates), enhanced distance slider with larger touch targets (hyperlocal is core differentiator)",
+        
+        "Delivered three redesigned screens with measurable improvements: Connections—50% clutter reduction, improved CTA visibility likely increasing invitation rates; Profile—structured content reduces abandonment, clear completion indicators encourage information filling, tab navigation improves organization perception; Refine—prominent filtering empowers user control, clear purpose selection finds relevant connections, status visibility encourages authentic expression. Prototype demonstrates navigation flow, interactive filtering, profile tab switching, invitation feedback"
+      ],
+      
+      metrics: [
+        {
+          value: "50%",
+          label: "Visual clutter reduction through strategic white space and content zones",
+          color: "text-green-400",
+          gradient: "from-green-500/10 to-teal-500/10",
+          border: "border-green-500/20"
+        },
+        {
+          value: "3 levels",
+          label: "Typography hierarchy enabling 3-5 second connection evaluation",
+          color: "text-blue-400",
+          gradient: "from-blue-500/10 to-purple-500/10",
+          border: "border-blue-500/20"
+        },
+        {
+          value: "4 tabs",
+          label: "Progressive disclosure reducing profile completion overwhelm",
+          color: "text-purple-400",
+          gradient: "from-purple-500/10 to-pink-500/10",
+          border: "border-purple-500/20"
+        }
+      ],
+      
+      learnings: [
+        {
+          title: "Less Is More in Dense Interfaces",
+          description: "Removing elements is harder than adding—50% clutter reduction required discipline but created better scanning",
+          color: "text-green-400"
+        },
+        {
+          title: "Consistency Compounds Impact",
+          description: "Small spacing/sizing inconsistencies create visual noise—unified 8px grid across screens improved polish",
+          color: "text-blue-400"
+        },
+        {
+          title: "Progressive Disclosure Manages Complexity",
+          description: "Tabs reduced perceived overwhelm—not everything needs visibility at once, separation improves completion",
+          color: "text-purple-400"
+        },
+        {
+          title: "Context Informs Every Decision",
+          description: "Understanding hyperlocal networking (1-100km radius, quick evaluations) shaped card design, slider prominence, CTA placement",
+          color: "text-orange-400"
+        }
+      ],
+      
+      screens: [
+        {
+          title: "Connections - Before",
+          description: "Original dense layout with competing elements",
+          image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1762344728/Connections_-_Before_dhqwzw.jpg"
+        },
+        {
+          title: "Connections - After",
+          description: "Streamlined cards with clear hierarchy",
+          image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1762344721/Connections_-_After_drbmm6.jpg"
+        },
+        {
+          title: "Profile - Before",
+          description: "Single-scroll with incomplete sections",
+          image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1762344722/Profile_-_Before_qevxef.png"
+        },
+        {
+          title: "Profile - After",
+          description: "Tab navigation with completion indicators",
+          image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1762344724/Profile_-_After_by5mv3.jpg"
+        },
+        {
+          title: "Refine - Before",
+          description: "Underwhelming filtering controls",
+          image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1762344722/Refine_-_Before_zwzwnj.png" 
+        },
+        {
+          title: "Refine - After",
+          description: "Prominent purpose tags and slider",
+          image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1762344721/Refine_-_After_aayxxz.jpg"
+        }
+      ],
+      
+      //mockupImage: "", // Alternative: single composite image showing all before/after comparisons
+      
+      impact: "The Netclan Explorer redesign demonstrates how strategic visual design and improved information architecture significantly enhance user experience in hyperlocal networking. By prioritizing visual hierarchy (3-level typography, 50% clutter reduction), scannability (distinct content zones enabling 3-5 second evaluation), and engagement (progressive disclosure through 4-tab navigation, completion indicators), the redesign helps users more quickly discover and connect with their local community. Key takeaways emphasize discipline in removal over addition (50% clutter reduction), consistency's compound impact (unified spacing/sizing), progressive disclosure managing complexity (tabs reduce overwhelm), and context-driven decisions (hyperlocal radius + quick scanning shaped all design choices). The focused scope on three core screens—Connections, Profile, Refine—touches the most critical user journey moments: discovering connections, presenting oneself, and customizing experience."
     }
+  }
   ]
 };
 
