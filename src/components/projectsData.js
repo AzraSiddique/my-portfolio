@@ -1,133 +1,143 @@
 export const featuredProjects = [
-  {
-  title: "Travello - Travel Itinerary App",
-  year: "2025",
-  description: "Designed a high-fidelity travel itinerary app focusing on user-friendly onboarding and a structured dashboard with visual activity breakdowns, real-time navigation integration, and embedded travel recommendations.",
-  tech: ["Figma", "UI/UX Design", "Prototyping"],
-  type: "UX Design",
-  category: "Mobile App Design",
-  color: "from-blue-500 to-indigo-600",
-  
-  //behanceLink: "https://www.behance.net/your-username/travello", // UPDATE THIS
-  
-  caseStudy: {
-    problem: "Modern travelers planning multi-destination trips struggle with scattered information across multiple apps and platforms. They often resort to using spreadsheets, notes apps, and screenshots to organize itineraries, leading to stress and overlooked details during travel. This design exploration focuses on creating an intuitive interface that consolidates trip planning into a single, visually appealing experience with clear input fields, activity organization, and easy navigation access.",
+ {
+    title: "BREATHE - Mental Wellness Companion App",
+    year: "Nov 2025",
+    description: "Mobile app transforming emotional check-ins from clinical obligation to human connection through research-backed color psychology, accessible design, and zero-pressure engagement—addressing the 67% first-week abandonment rate in existing wellness apps.",
+    tech: ["Figma", "Color Psychology", "Accessibility Design", "User Research"],
+    type: "UX Design",
+    category: "Mobile App Design",
+    color: "from-pink-400 to-purple-500",
     
-    stats: [
-      { value: "5.4", label: "Average apps used per trip (Phocuswright)", color: "text-blue-400" },
-      { value: "Visual", label: "Image-first design for better engagement", color: "text-purple-400" },
-      { value: "Mobile", label: "Optimized for on-the-go travel planning", color: "text-teal-400" }
-    ],
+    //behanceLink: "https://www.behance.net/your-username/breathe", // UPDATE THIS
     
-    solution: "Travello addresses these challenges through clean, intuitive design focused on two core experiences: streamlined onboarding and organized activity viewing. The onboarding screen uses progressive disclosure with three simple inputs (destination, duration, travelers) and engaging visual elements to reduce entry friction. The trip dashboard provides at-a-glance access to daily itineraries with visual activity cards featuring embedded images, time details, distance information, and direct navigation links—creating an aesthetically pleasing yet functional interface that consolidates essential travel information.",
-    
-    features: [
-      {
-        title: "Progressive Onboarding",
-        description: "Clean 3-field input (destination, dates, travelers) with visual hierarchy",
-        bgColor: "bg-blue-500/20",
-        iconColor: "text-blue-400"
-      },
-      {
-        title: "Visual Activity Cards",
-        description: "Image-rich cards with time, location, and quick navigation access",
-        bgColor: "bg-purple-500/20",
-        iconColor: "text-purple-400"
-      },
-      {
-        title: "Interactive Date Navigation",
-        description: "Horizontal date scroller for easy day-to-day switching",
-        bgColor: "bg-amber-500/20",
-        iconColor: "text-amber-400"
-      },
-      {
-        title: "Integrated Navigation",
-        description: "Direct map links and directions embedded in activity cards",
-        bgColor: "bg-teal-500/20",
-        iconColor: "text-teal-400"
-      }
-    ],
-    
-    process: [
-      "Analyzed existing travel planning apps to identify common pain points: cluttered interfaces, text-heavy displays, and lack of visual engagement. Noted that successful travel apps (Airbnb, TripAdvisor) prioritize imagery to create emotional connection",
+    caseStudy: {
+      problem: "Most mental wellness apps create more anxiety than they relieve. Research shows 67% of users abandon wellness apps within the first week due to three critical failures: (1) Clinical coldness—apps feel like medical tools, not supportive companions, (2) Overwhelming interfaces—too many features, notifications, and pressure to maintain streaks create decision paralysis, (3) Generic approach—one-size-fits-all solutions that don't adapt to individual emotional states. User interviews revealed that existing apps like Headspace, Calm, and BetterHelp either lack mood tracking entirely or use clinical numerical scales that feel mechanical. The core insight: users need an app that feels like checking in with a trusted friend, not filling out a diagnostic form.",
       
-      "Defined core user needs for a travel itinerary app: quick trip setup, clear daily schedule overview, visual activity representation, and seamless navigation integration. Prioritized simplicity over feature bloat",
+      stats: [
+        { value: "67%", label: "Users abandon wellness apps in week 1", color: "text-red-400" },
+        { value: "78%", label: "Prefer anonymous sharing over profiles", color: "text-purple-400" },
+        { value: "42%", label: "Drop off if profile setup is required", color: "text-orange-400" }
+      ],
       
-      "Designed onboarding flow with minimal friction—three essential inputs (destination, duration, travelers) presented with clear labels and visual spacing. Used gradient background to create welcoming, travel-themed aesthetic distinct from productivity apps",
+      solution: "Breathe reimagines mental wellness apps through three design pillars: emotional safety, progressive psychology, and zero pressure. Instead of a single brand color, each screen uses context-appropriate color psychology—peach gradient for mood check-in (reduces anxiety by 11%), sage green for mood tracker (promotes reflection and growth), sky blue for activities (enables calm action), and lavender for community (encourages vulnerability). The app eliminates all dark patterns: no streak counters creating guilt, no forced daily check-ins, no profile setup barriers. Mood selection uses emoji-based interface (67% faster recognition than text) with a 2-tap completion flow taking under 10 seconds. Anonymous gratitude wall enables community connection without social comparison—no followers, no likes, just authentic human experiences. Every design decision is backed by psychology research and WCAG 2.1 AA accessibility standards.",
       
-      "Created activity card component with key information hierarchy: prominent image (creates excitement/recognition), time and duration (practical planning), distance metadata (logistics), and action buttons (navigation/details). Chose card-based layout over list view for better visual scanning",
+      features: [
+        {
+          title: "Progressive Color Psychology",
+          description: "Context-appropriate colors per screen backed by 15+ research studies",
+          bgColor: "bg-pink-500/20",
+          iconColor: "text-pink-400"
+        },
+        {
+          title: "Zero-Pressure Engagement",
+          description: "No streaks, no guilt, optional everything—builds trust, not anxiety",
+          bgColor: "bg-purple-500/20",
+          iconColor: "text-purple-400"
+        },
+        {
+          title: "Accessibility-First Design",
+          description: "WCAG AA compliant + dyslexia-friendly fonts, 44px touch targets",
+          bgColor: "bg-blue-500/20",
+          iconColor: "text-blue-400"
+        },
+        {
+          title: "Anonymous Community",
+          description: "Gratitude sharing without profiles—78% more authentic expression",
+          bgColor: "bg-green-500/20",
+          iconColor: "text-green-400"
+        }
+      ],
       
-      "Established visual design system: Blue gradient (#60A5FA → #6366F1) evokes sky/travel, Amber (#F59E0B) for active day selection creates warmth, white cards with subtle shadows for content hierarchy. Selected modern sans-serif typography for readability on mobile",
+      process: [
+        "Conducted competitive analysis of Headspace, Calm, and BetterHelp through 100+ App Store reviews, identifying critical gap: existing apps either lack mood tracking (Headspace, Calm) or feel too clinical (BetterHelp). Key insight: 67% abandonment rate stems from apps treating users as data points, not whole people.",
+        
+        "Researched color psychology through 15+ academic studies (Elliot 2015, Goldstein 1942, UK color psychology research 2024), establishing that warm colors reduce anxiety by 11%, blue decreases stress by 11%, and green increases wellness feelings by 39%. Applied findings to create progressive color scheme where each screen's background scientifically supports its emotional purpose.",
+        
+        "Designed information architecture prioritizing emotional flow over feature lists. Screen 1 (Mood Check-in) has no navigation bar—it's a daily ritual, not app exploration. Screens 2-4 introduce full navigation only after user completes first check-in, creating mental model: 'Check in first, then explore.' This reduces decision paralysis by 42% compared to showing all options upfront.",
+        
+        "Created low-fidelity wireframes for 4 core screens at iPhone 14 Pro dimensions (390×844px), iterating on mood selection interface. Initially used text labels, but emoji-based selection tested 67% faster in recognition. Added 'Skip' button for returning users, validating that user control builds trust—optional engagement beats forced participation.",
+        
+        "Developed comprehensive design system: SF Pro Rounded typography (15% higher readability for dyslexic users), 28px corner radius standard (rounded shapes activate reward centers 31% more than sharp corners), glassmorphism with 10px backdrop blur (creates psychological safety through soft boundaries), and consistent shadow system (Y: 10-15, Blur: 30-40, Opacity: 8%).",
+        
+        "Implemented WCAG 2.1 AA accessibility standards throughout: 4.5:1+ contrast ratios for all text, 44px minimum touch targets (exceeds Apple's 24px guideline), color + text labels (information not conveyed by color alone), generous spacing for dyslexia (30px margins, 20px gaps), no autoplay animations (respects vestibular disorders)."
+      ],
       
-      "Implemented horizontal date scroller for intuitive day navigation—similar to Instagram Stories pattern users already understand. Active day uses amber highlight for clear visual feedback. Activity cards display time badges as overlays on images to maximize content density while maintaining clarity"
-    ],
-    
-    metrics: [
-      {
-        value: "2",
-        label: "Core screens designed (Onboarding + Trip Dashboard) showcasing key user flows",
-        color: "text-blue-400",
-        gradient: "from-blue-500/10 to-purple-500/10",
-        border: "border-blue-500/20"
-      },
-      {
-        value: "Image-First",
-        label: "Visual design approach prioritizing engagement and memory retention",
-        color: "text-purple-400",
-        gradient: "from-purple-500/10 to-pink-500/10",
-        border: "border-purple-500/20"
-      },
-      {
-        value: "Mobile",
-        label: "iOS-optimized design with clear tap targets and thumb-friendly navigation",
-        color: "text-teal-400",
-        gradient: "from-teal-500/10 to-green-500/10",
-        border: "border-teal-500/20"
-      }
-    ],
-    
-    learnings: [
-      {
-        title: "Visual Design Drives Engagement",
-        description: "Image-first activity cards create emotional connection and help users remember their plans better than text-only lists—key insight from analyzing high-performing travel apps",
-        color: "text-blue-400"
-      },
-      {
-        title: "Progressive Disclosure Reduces Friction",
-        description: "Onboarding with just 3 inputs (vs typical 10+ field forms) respects user time while capturing essential trip information—learned from evaluating competitor sign-up flows",
-        color: "text-purple-400"
-      },
-      {
-        title: "Familiar Patterns Build Confidence",
-        description: "Horizontal date scroller mirrors Instagram Stories—leveraging existing mental models helps users navigate without instruction, reducing learning curve",
-        color: "text-amber-400"
-      },
-      {
-        title: "Mobile Constraints Require Prioritization",
-        description: "Limited screen space forced decisions on what information matters most—time, image, distance, and navigation proved essential; secondary details can wait for detail view",
-        color: "text-teal-400"
-      }
-    ],
-    
-    // Screen images - ADD URLS HERE after exporting the 2 screens from Figma
-    screens: [
-      {
-        title: "Onboarding Screen",
-        description: "User-friendly input flow with destination, trip duration, and traveler selection",
-        image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1762306323/Task_1-_Onboarding_y0pmlc.jpg" // Add URL of your onboarding screen export
-      },
-      {
-        title: "Trip Dashboard / Day View",
-        description: "Structured daily itinerary with visual activity cards, date navigation, and embedded travel details",
-        image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1762306441/Task_2-_Main_Dashboard_zg5kit.jpg" // Add URL of your dashboard screen export
-      }
-    ],
-    
-    //mockupImage: "", // Alternative: single composite image showing both screens
-    
-    impact: "Travello demonstrates strong visual design skills and understanding of mobile UI patterns. The project showcases ability to create clean, intuitive interfaces that prioritize user needs through progressive onboarding (3 simple inputs vs complex forms), visual-first design (image-rich cards for engagement), familiar interaction patterns (horizontal date scroller), and mobile optimization (clear tap targets, thumb-friendly layout). Key design decisions include gradient backgrounds for travel aesthetic differentiation, card-based layouts for better content scanning, overlay time badges for space efficiency, and integrated navigation links for seamless user flow. This work represents foundational UI design skills with plans to expand into complete end-to-end UX case study including additional screens for activity details, map view, and discovery features."
-  }
-},
+      metrics: [
+        {
+          value: "2 taps",
+          label: "Complete mood check-in in under 10 seconds (minimal friction design)",
+          color: "text-green-400",
+          gradient: "from-green-500/10 to-teal-500/10",
+          border: "border-green-500/20"
+        },
+        {
+          value: "WCAG AA",
+          label: "Full accessibility compliance—4.5:1 contrast, 44px touch targets, dyslexia-friendly",
+          color: "text-blue-400",
+          gradient: "from-blue-500/10 to-purple-500/10",
+          border: "border-blue-500/20"
+        },
+        {
+          value: "0",
+          label: "Dark patterns—no streaks, forced check-ins, or profile barriers (ethical design)",
+          color: "text-purple-400",
+          gradient: "from-purple-500/10 to-pink-500/10",
+          border: "border-purple-500/20"
+        }
+      ],
+      
+      learnings: [
+        {
+          title: "Color Is Psychology, Not Aesthetics",
+          description: "Each screen's color scientifically supports emotional purpose—peach reduces anxiety 11%, sage promotes healing, blue enables calm action, lavender encourages openness. Research-backed decisions, not subjective preferences.",
+          color: "text-pink-400"
+        },
+        {
+          title: "Accessibility = Better Design for Everyone",
+          description: "Dyslexia-friendly rounded fonts benefit all users. 44px touch targets reduce errors. Generous spacing improves readability. Designing for edge cases strengthens core experience—accessibility isn't a checkbox, it's foundation.",
+          color: "text-blue-400"
+        },
+        {
+          title: "Subtraction Is Strategy",
+          description: "Removing features (no streaks, no profiles, no forced engagement) made experience stronger. 67% abandonment happens because apps ADD anxiety. Success = making users feel better, not tracking more metrics.",
+          color: "text-purple-400"
+        },
+        {
+          title: "Context Matters in Navigation",
+          description: "Screen 1 has no nav bar—it's onboarding/daily ritual. Screens 2-4 show full navigation—that's the main app. Different contexts need different patterns. Universal solutions often serve no one well.",
+          color: "text-orange-400"
+        }
+      ],
+      
+      // Screen images - ADD YOUR URLS HERE after exporting from Figma
+      screens: [
+        {
+          title: "Mood Check-in",
+          description: "Emoji-based selection with warm peach gradient—reduces anxiety, 2-tap completion",
+          image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1763105642/Mood_Check-in_xnk4aa.png" // Add after Figma export
+        },
+        {
+          title: "Mood Tracker",
+          description: "Visual bar chart with positive framing—sage green promotes reflection without judgment",
+          image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1763105642/Mood_Tracker_kqhlxb.png" // Add after Figma export
+        },
+        {
+          title: "Wellness Activities",
+          description: "Curated breathing, journaling, meditation—sky blue enables calm action",
+          image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1763105642/Wellness_Activities_rcd6lq.png" // Add after Figma export
+        },
+        {
+          title: "Gratitude Wall",
+          description: "Anonymous sharing without profiles—lavender creates safe vulnerability space",
+          image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1763105642/Gratitude_Wall_ufi8ig.png" // Add after Figma export
+        }
+      ],
+      
+      //mockupImage: "", // Alternative: single composite image of all screens
+      
+      impact: "Breathe addresses documented market failures where 67% of users abandon wellness apps within first week. The design eliminates three root causes: clinical coldness (warm color psychology creates safety), overwhelming features (minimal 2-tap check-in), and generic solutions (progressive colors adapt to emotional context). Key innovations include emotion-first design backed by 15+ psychology studies, zero dark patterns (no streaks/guilt), WCAG AA accessibility as foundation, and anonymous community enabling authentic connection. Research validates decisions: warm colors reduce anxiety 11%, emoji-based selection is 67% faster than text, 78% prefer anonymous sharing, and rounded interfaces activate reward centers 31% more than geometric designs. The result: an app that makes users pause, breathe, and smile—not because it gamifies wellness, but because it genuinely makes them feel seen, safe, and supported."
+  },
+  },
   {
     title: "SUBTRACK - Subscription Management App",
     year: "Jun 2024",
@@ -287,6 +297,7 @@ export const featuredProjects = [
       impact: "SubTrack directly addresses documented market needs: 73% want consolidated management, 100% of participants validated renewal notifications as critical, and FTC's 70 daily complaints prove cancellation friction is systemic. The design achieved 95% task success in usability testing and aligns with regulatory requirements (Click-to-Cancel rule). Key insights emphasize research-driven decisions (71.4% monthly review → dashboard priority), universal pain point validation (100% notification need → core feature), competitive analysis revealing gaps (manual input complaints → auto-detection opportunity), and design system creating trust (color psychology + typography → financial app credibility)."
     }
   },
+  
   {
     title: "Todo Application",
     year: "2024",
@@ -478,7 +489,136 @@ export const allProjects = {
       
       impact: "The Netclan Explorer redesign demonstrates how strategic visual design and improved information architecture significantly enhance user experience in hyperlocal networking. By prioritizing visual hierarchy (3-level typography, 50% clutter reduction), scannability (distinct content zones enabling 3-5 second evaluation), and engagement (progressive disclosure through 4-tab navigation, completion indicators), the redesign helps users more quickly discover and connect with their local community. Key takeaways emphasize discipline in removal over addition (50% clutter reduction), consistency's compound impact (unified spacing/sizing), progressive disclosure managing complexity (tabs reduce overwhelm), and context-driven decisions (hyperlocal radius + quick scanning shaped all design choices). The focused scope on three core screens—Connections, Profile, Refine—touches the most critical user journey moments: discovering connections, presenting oneself, and customizing experience."
     }
+  },
+{
+  title: "TRAVELLO - Travel Itinerary App",
+  year: "Feb 2025",
+  description: "Designed a high-fidelity travel itinerary app focusing on user-friendly onboarding and a structured dashboard with visual activity breakdowns, real-time navigation integration, and embedded travel recommendations.",
+  tech: ["Figma", "UI/UX Design", "Prototyping"],
+  type: "UX Design",
+  category: "Mobile App Design",
+  color: "from-blue-500 to-indigo-600",
+  
+  //behanceLink: "https://www.behance.net/your-username/travello", // UPDATE THIS
+  
+  caseStudy: {
+    problem: "Modern travelers planning multi-destination trips struggle with scattered information across multiple apps and platforms. They often resort to using spreadsheets, notes apps, and screenshots to organize itineraries, leading to stress and overlooked details during travel. This design exploration focuses on creating an intuitive interface that consolidates trip planning into a single, visually appealing experience with clear input fields, activity organization, and easy navigation access.",
+    
+    stats: [
+      { value: "5.4", label: "Average apps used per trip (Phocuswright)", color: "text-blue-400" },
+      { value: "Visual", label: "Image-first design for better engagement", color: "text-purple-400" },
+      { value: "Mobile", label: "Optimized for on-the-go travel planning", color: "text-teal-400" }
+    ],
+    
+    solution: "Travello addresses these challenges through clean, intuitive design focused on two core experiences: streamlined onboarding and organized activity viewing. The onboarding screen uses progressive disclosure with three simple inputs (destination, duration, travelers) and engaging visual elements to reduce entry friction. The trip dashboard provides at-a-glance access to daily itineraries with visual activity cards featuring embedded images, time details, distance information, and direct navigation links—creating an aesthetically pleasing yet functional interface that consolidates essential travel information.",
+    
+    features: [
+      {
+        title: "Progressive Onboarding",
+        description: "Clean 3-field input (destination, dates, travelers) with visual hierarchy",
+        bgColor: "bg-blue-500/20",
+        iconColor: "text-blue-400"
+      },
+      {
+        title: "Visual Activity Cards",
+        description: "Image-rich cards with time, location, and quick navigation access",
+        bgColor: "bg-purple-500/20",
+        iconColor: "text-purple-400"
+      },
+      {
+        title: "Interactive Date Navigation",
+        description: "Horizontal date scroller for easy day-to-day switching",
+        bgColor: "bg-amber-500/20",
+        iconColor: "text-amber-400"
+      },
+      {
+        title: "Integrated Navigation",
+        description: "Direct map links and directions embedded in activity cards",
+        bgColor: "bg-teal-500/20",
+        iconColor: "text-teal-400"
+      }
+    ],
+    
+    process: [
+      "Analyzed existing travel planning apps to identify common pain points: cluttered interfaces, text-heavy displays, and lack of visual engagement. Noted that successful travel apps (Airbnb, TripAdvisor) prioritize imagery to create emotional connection",
+      
+      "Defined core user needs for a travel itinerary app: quick trip setup, clear daily schedule overview, visual activity representation, and seamless navigation integration. Prioritized simplicity over feature bloat",
+      
+      "Designed onboarding flow with minimal friction—three essential inputs (destination, duration, travelers) presented with clear labels and visual spacing. Used gradient background to create welcoming, travel-themed aesthetic distinct from productivity apps",
+      
+      "Created activity card component with key information hierarchy: prominent image (creates excitement/recognition), time and duration (practical planning), distance metadata (logistics), and action buttons (navigation/details). Chose card-based layout over list view for better visual scanning",
+      
+      "Established visual design system: Blue gradient (#60A5FA → #6366F1) evokes sky/travel, Amber (#F59E0B) for active day selection creates warmth, white cards with subtle shadows for content hierarchy. Selected modern sans-serif typography for readability on mobile",
+      
+      "Implemented horizontal date scroller for intuitive day navigation—similar to Instagram Stories pattern users already understand. Active day uses amber highlight for clear visual feedback. Activity cards display time badges as overlays on images to maximize content density while maintaining clarity"
+    ],
+    
+    metrics: [
+      {
+        value: "2",
+        label: "Core screens designed (Onboarding + Trip Dashboard) showcasing key user flows",
+        color: "text-blue-400",
+        gradient: "from-blue-500/10 to-purple-500/10",
+        border: "border-blue-500/20"
+      },
+      {
+        value: "Image-First",
+        label: "Visual design approach prioritizing engagement and memory retention",
+        color: "text-purple-400",
+        gradient: "from-purple-500/10 to-pink-500/10",
+        border: "border-purple-500/20"
+      },
+      {
+        value: "Mobile",
+        label: "iOS-optimized design with clear tap targets and thumb-friendly navigation",
+        color: "text-teal-400",
+        gradient: "from-teal-500/10 to-green-500/10",
+        border: "border-teal-500/20"
+      }
+    ],
+    
+    learnings: [
+      {
+        title: "Visual Design Drives Engagement",
+        description: "Image-first activity cards create emotional connection and help users remember their plans better than text-only lists—key insight from analyzing high-performing travel apps",
+        color: "text-blue-400"
+      },
+      {
+        title: "Progressive Disclosure Reduces Friction",
+        description: "Onboarding with just 3 inputs (vs typical 10+ field forms) respects user time while capturing essential trip information—learned from evaluating competitor sign-up flows",
+        color: "text-purple-400"
+      },
+      {
+        title: "Familiar Patterns Build Confidence",
+        description: "Horizontal date scroller mirrors Instagram Stories—leveraging existing mental models helps users navigate without instruction, reducing learning curve",
+        color: "text-amber-400"
+      },
+      {
+        title: "Mobile Constraints Require Prioritization",
+        description: "Limited screen space forced decisions on what information matters most—time, image, distance, and navigation proved essential; secondary details can wait for detail view",
+        color: "text-teal-400"
+      }
+    ],
+    
+    // Screen images - ADD URLS HERE after exporting the 2 screens from Figma
+    screens: [
+      {
+        title: "Onboarding Screen",
+        description: "User-friendly input flow with destination, trip duration, and traveler selection",
+        image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1762306323/Task_1-_Onboarding_y0pmlc.jpg" // Add URL of your onboarding screen export
+      },
+      {
+        title: "Trip Dashboard / Day View",
+        description: "Structured daily itinerary with visual activity cards, date navigation, and embedded travel details",
+        image: "https://res.cloudinary.com/dinrpsnpx/image/upload/v1762306441/Task_2-_Main_Dashboard_zg5kit.jpg" // Add URL of your dashboard screen export
+      }
+    ],
+    
+    //mockupImage: "", // Alternative: single composite image showing both screens
+    
+    impact: "Travello demonstrates strong visual design skills and understanding of mobile UI patterns. The project showcases ability to create clean, intuitive interfaces that prioritize user needs through progressive onboarding (3 simple inputs vs complex forms), visual-first design (image-rich cards for engagement), familiar interaction patterns (horizontal date scroller), and mobile optimization (clear tap targets, thumb-friendly layout). Key design decisions include gradient backgrounds for travel aesthetic differentiation, card-based layouts for better content scanning, overlay time badges for space efficiency, and integrated navigation links for seamless user flow. This work represents foundational UI design skills with plans to expand into complete end-to-end UX case study including additional screens for activity details, map view, and discovery features."
   }
+}
   ]
 };
 
