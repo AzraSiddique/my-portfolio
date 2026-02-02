@@ -337,7 +337,7 @@ export const allProjects = {
       color: "from-orange-500 to-red-500",
       highlights: ["Responsive Design", "Bootstrap Grid", "Product Catalog"],
       githubLink: "#",
-      liveLink: "#"
+      liveLink: "http://vrwebsite652.ccbp.tech/"
     }
   ],
   ux: [
