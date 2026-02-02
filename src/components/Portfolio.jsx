@@ -152,9 +152,9 @@ export default function Portfolio() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-8xl font-bold mb-6 leading-tight">
-            <span className="block mb-2">Full-Stack Developer</span>
+            <span className="block mb-2">UX Designer</span>
             <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient">
-              & UX Designer
+              | Full-Stack Developer
             </span>
           </h1>
 
